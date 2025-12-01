@@ -1,57 +1,56 @@
-# Interactive Chatbot Interface for News Summarization
+# 📰 Article Summarizer Chatbot
 
-This repository contains the code for a chatbot-style graphical user interface (GUI) that performs automated news summarization. The system utilizes Google's Gemini 2.5 Flash model to generate concise summaries, topics, and reflective questions from news articles.
+An interactive chatbot interface for automated **news summarization**, powered by **Google Gemini 2.5 Flash**.  
+The system generates concise summaries, extracts key topics, and proposes reflective questions from long-form articles — all within a **Streamlit** app.
 
-## Features
+---
 
-  - [cite\_start]**Automated Summarization**: Users can input long-form news articles and receive a concise summary of no more than five factual sentences[cite: 21].
-  - [cite\_start]**Topic Extraction**: The interface can identify and list the top three topics covered in an article[cite: 21].
-  - [cite\_start]**Question Generation**: It can also generate three thought-provoking questions a reader might have after reading the content[cite: 21].
-  - [cite\_start]**User-Friendly Interface**: The GUI is developed using Streamlit, offering a responsive and interactive experience with features like real-time feedback and session state management[cite: 22, 24, 25].
-  - [cite\_start]**Conversational Design**: The interface is designed in a chatbot style, maintaining a history of user interactions[cite: 23].
+## ✨ Features
 
-## Technology Stack
+- **Automated Summarization** → Summarize articles in ≤ 5 factual sentences  
+- **Topic Extraction** → Identify the top 3 topics covered  
+- **Question Generation** → Generate 3 thought-provoking reader questions  
+- **Chatbot Interface** → Conversational design with session history  
+- **Responsive GUI** → Built with Streamlit for real-time interaction  
 
-  - **Model**: Google Gemini 2.5 Flash
-  - [cite\_start]**Framework**: Streamlit for the GUI [cite: 4, 22]
-  - **Language**: Python
-  - [cite\_start]**Dataset**: CNN/DailyMail summarization dataset (version 3.0.0) was used for benchmarking and evaluation[cite: 5, 15].
-  - **Libraries**:
-      - [cite\_start]`google-generativeai`: For accessing the Gemini model via API[cite: 20].
-      - [cite\_start]`rouge_score`: For evaluating summary quality[cite: 6, 21].
-      - [cite\_start]`Hugging Face datasets`: For loading and processing the CNN/DailyMail dataset[cite: 18].
+---
 
-## Methodology
+## 🛠️ Technology Stack
 
-[cite\_start]The project leverages prompt engineering to structure the output from the Gemini model[cite: 4, 21]. [cite\_start]The summaries were benchmarked against human-written highlights from the CNN/DailyMail dataset, and their quality was assessed using ROUGE-1, ROUGE-2, and ROUGE-L metrics[cite: 6, 17, 21]. [cite\_start]The average ROUGE scores for a sample batch of articles were 0.41 (ROUGE-1), 0.25 (ROUGE-2), and 0.39 (ROUGE-L)[cite: 28].
+- **Model**: Google Gemini 2.5 Flash  
+- **Framework**: Streamlit  
+- **Language**: Python  
+- **Libraries**:  
+  - `google-generativeai` → Gemini API access  
+  - `rouge-score` → Summary evaluation  
+  - `datasets` (Hugging Face) → Benchmarking with CNN/DailyMail  
 
-## Getting Started
+---
 
-Follow these steps to set up and run the project locally:
+## 📊 Methodology
 
-1.  **Clone the Repository**:
+- Uses **prompt engineering** to structure Gemini outputs  
+- Benchmarked against CNN/DailyMail highlights  
+- Evaluated with **ROUGE-1, ROUGE-2, ROUGE-L** metrics  
+- Average scores:  
+  - ROUGE-1 → 0.41  
+  - ROUGE-2 → 0.25  
+  - ROUGE-L → 0.39  
 
-    ```sh
-    git clone https://github.com/your-username/interactive-news-summarizer.git
-    cd interactive-news-summarizer
-    ```
+---
 
-2.  **Install Dependencies**:
+## 🚀 Deployment & Usage
 
-    ```sh
-    pip install -r requirements.txt
-    ```
+1. Open the app in your browser.  
+2. Enter your **Google Gemini API key** when prompted.  
+3. Paste a news article into the input box.  
+4. Use the chatbot interface to:  
+   - 🧾 Summarize  
+   - 🧠 Extract Topics  
+   - ❓ Generate Questions  
 
-3.  **Configure API Key**: Obtain a Google Gemini API key from the Google AI for Developers website.
+---
 
-4.  **Run the Application**:
+## 📜 License
 
-    ```sh
-    streamlit run app.py
-    ```
-
-    (Note: The main script may be named differently, e.g., `main.py` or `app.py`).
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
+Licensed under the **MIT License**. See the `LICENSE` file for details.

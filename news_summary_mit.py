@@ -40,7 +40,6 @@ df_train['highlights'][0]
 
 """# 2.Integrate GMININI Model"""
 
-!pip install -q -U google-genai
 
 import google.generativeai as genai
 
@@ -55,7 +54,6 @@ model = genai.GenerativeModel(model_name)
 
 """#3.Prompting"""
 
-!pip install rouge_score
 import time
 import json
 import pandas as pd

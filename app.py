@@ -2,7 +2,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # ==== Setup ====
-st.set_page_config(page_title="Article Summarizer Chatbot", layout="centered")
+st.set_page_config(page_title="Article Summarizer Chatbot", layout="centered", page_icon="📰")
 st.title("📰 Article Summarizer Chatbot")
 
 # ==== Session State ====
@@ -78,7 +78,7 @@ if api_key:
                     response = model.generate_content(q_prompt)
                     questions = response.text.strip()
                     st.session_state.chat_history.append(("Questions", questions))
-                    st.experimental_rerun()
+                    st.rerun()
                 except Exception as e:
                     st.error(f"Error generating questions: {e}")
             else:
