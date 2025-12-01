@@ -1,8 +1,7 @@
 # 📰 Article Summarizer Chatbot
 
 An interactive chatbot interface for automated **news summarization**, powered by **Google Gemini 2.5 Flash**.  
-The system generates concise summaries, extracts key topics, and proposes reflective questions from long-form articles — all within a **Streamlit** app.
-
+Live Demo: [DEMO](https://news-summary-chatbot-mahe.streamlit.app/)
 ---
 
 ## ✨ Features
